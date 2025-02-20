@@ -4,43 +4,33 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
+   <style>
+      .h1{
+         color:red;
+         font-size: 40px;
+         text-align: center;
+      }
+      .h2{
+         color:pink;
+         font-size: 30px;
+         text-align: center;
+      }
+
+   </style>
 </head>
 <body>
+   <h1>¡BIENVENIDO A LA PAGINA DE ALERTA!</h1>
+   <h2> Por favor, ingresa tu nombre:</h2>
    <form action="">
-      <input type="number" id="tiempo" placeholder="Ingresa el tiempo"><br>
-      <button onclick="javascript: validar();"> VALIDAR </button>
+      <input type="text" id="nombre" placeholder="Ingrese su nombre"><br>
+      <button onclick="javascript: enviar();" style="color: green; font-weight: bolder;">ENVIAR</button>
    </form>
    <script>
       function validar()
       {
-         var dato = document.getElementById("tiempo").value;
-         if(dato==60){
-            window.alert("El tiempo ingresado es de una hora.");
-         }
-         else if(dato==90){
-            window.alert("El tiempo ingreado es de hora y media.");
-         }
-         else if(dato==120){
-            window.alert("El tiempo ingresado es de dos horas.");
-         }
-         else if(dato==150){
-            window.alert("El tiempo ingresado es de dos horas y media.");
-         }
-         else if(dato==180){
-            window.alert("El tiempo ingresado es de tres horas.");
-         }
-         else if(dato==210){
-            window.alert("El tiempo ingresado es de tres horas y media.");
-         }
-         else if(dato==240){
-            window.alert("El tiempo ingresado es de cuatro horas.");
-         }
-         else if(dato<240){
-            window.alert("El tiempo ingresado es mayor a cuatro horas.")
-         }
-         else{
-            window.alert("El tiempo ingresado es menor a una hora");
-         }
+         var nombre=document.getElementById("nombre").value;
+         var nombre=
+         window.alert("Hola,"+nombre );
       }
    </script>
 </body>

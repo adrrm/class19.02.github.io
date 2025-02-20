@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <form action="">
+      <input type="number" id="numero" placeholder="Ingresa el valor"><br>
+      <button onclick="javascript: validar();"> VALIDAR </button>
+   </form>
+   <script>
+      function validar()
+      {
+         var number=document.getElementById("numero").value;
+         var dato=(number<100)? "El numero ingresado es valido" : "El numero ingresado es invalido";
+         window.alert(dato);
+      }
+   </script>
+</body>
+</html>

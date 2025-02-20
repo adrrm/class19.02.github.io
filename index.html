@@ -25,7 +25,9 @@
    <script>
       function sumar(numero1,numero2)
       {
-         var resultado1=numero1+numero2;
+         var num1=document.getElementById("numero1").value;
+         var num2=document.getElementById("numero2").value;
+         var resultado1=num1+num2;
          document.getElementById("resultado").innerHTML="RESULTADO:"+resultado1;
       }
       function restar(numero1,numero2)
@@ -44,7 +46,7 @@
          document.getElementById("resultado").innerHTML="RESULTADO:"+resultado4;
       }
    </script>
-   <div id="numero1"></div>
-   <div id="numero2"></div>
+   <div id="resultado"></div>
+   
 </body>
 </html>

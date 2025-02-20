@@ -13,14 +13,14 @@
    <script>
       function validar()
       {
-         var dato = "";
+         var dato = document.getElementById("numero").value;
          if(dato<100) {
-            document.write("El numero ingresado es menor a 100 <br>");
+            window.alert("El numero ingresado es menor a 100");
          }
          else{
-            document.write("El numero ingresado es mayor a 100 <br>");
+            window.alert("El numero ingresado es mayor a 100");
          }
-         window.alert(dato);
+        
       }
    </script>
 </body>

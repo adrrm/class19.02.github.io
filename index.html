@@ -7,24 +7,39 @@
 </head>
 <body>
    <form action="">
-      <input type="text" id="animal" placeholder="Ingresa el animal"><br>
+      <input type="number" id="tiempo" placeholder="Ingresa el tiempo"><br>
       <button onclick="javascript: validar();"> VALIDAR </button>
    </form>
    <script>
       function validar()
       {
-         var dato = document.getElementById("animal").value;
-         if(dato=="Gato"){
-            window.alert("Usted tiene un gato");
+         var dato = document.getElementById("tiempo").value;
+         if(dato==60){
+            window.alert("El tiempo ingresado es de una hora.");
          }
-         else if(dato=="Perro"){
-            window.alert("Usted tiene un perro");
+         else if(dato==90){
+            window.alert("El tiempo ingreado es de hora y media.");
          }
-         else if(dato=="Pescado"){
-            window.alert("Usted tiene un pescado");
+         else if(dato==120){
+            window.alert("El tiempo ingresado es de dos horas.");
+         }
+         else if(dato==150){
+            window.alert("El tiempo ingresado es de dos horas y media.");
+         }
+         else if(dato==180){
+            window.alert("El tiempo ingresado es de tres horas.");
+         }
+         else if(dato==210){
+            window.alert("El tiempo ingresado es de tres horas y media.");
+         }
+         else if(dato==240){
+            window.alert("El tiempo ingresado es de cuatro horas.");
+         }
+         else if(240>dato){
+            window.alert("El tiempo ingresado es mayor a cuatro horas.")
          }
          else{
-            window.alert("Usted no tiene ni gato, ni perro, ni pescado")
+            window.alert("El tiempo ingresado es menor a una hora");
          }
       }
    </script>

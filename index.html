@@ -7,23 +7,25 @@
 </head>
 <body>
    <form action="">
-      <input type="number" id="numero" placeholder="Ingresa el valor"><br>
+      <input type="text" id="animal" placeholder="Ingresa el animal"><br>
       <button onclick="javascript: validar();"> VALIDAR </button>
    </form>
    <script>
       function validar()
       {
-         var dato = document.getElementById("numero").value;
-         if(dato<100) {
-            window.alert("El numero ingresado es menor a 100");
+         var dato = document.getElementById("animal").value;
+         if(dato=="Gato"){
+            window.alert("Usted tiene un gato");
          }
-         else if(dato>100){
-            window.alert("El numero ingresado es mayor a 100");
+         else if(dato=="Perro"){
+            window.alert("Usted tiene un perro");
+         }
+         else if(dato=="Pescado"){
+            window.alert("Usted tiene un pescado");
          }
          else{
-            window.alert("El numero ingresado es igual a 100");
+            window.alert("Usted no tiene ni gato, ni perro, ni pescado")
          }
-        
       }
    </script>
 </body>
